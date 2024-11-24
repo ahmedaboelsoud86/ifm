@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('facility_translations', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('facility_id')->unsigned();
-            $table->string('title',length: 30);
+            $table->string('title',length: 50);
             $table->text('description');
             $table->string('locale','2')->index();
             $table->unique(['facility_id', 'locale']);

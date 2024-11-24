@@ -4,7 +4,7 @@
           <div class="col-sm-6 item">
             <div class="logo"><img src="{{ asset('assets/images/logo.png') }}" alt="Takamul AlOula Facility Management " title="Takamul AlOula Facility Management " loading="lazy"></div>
             <p class="text">
-                {{ Str::words(aboutus()?->description , 70, ' ...')  }}
+                {{ Str::words(aboutus()?->description , 30, ' ...')  }}
             </p>
           </div>
           <div class="col-sm-3 item">

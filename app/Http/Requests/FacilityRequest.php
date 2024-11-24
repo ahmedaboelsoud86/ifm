@@ -29,7 +29,7 @@ class FacilityRequest extends FormRequest
         if (in_array($this->method(), ['PUT', 'PATCH'])) {
             $facilities = $this->route()->parameter('facility');
             foreach (config('translatable.locales') as $locale) {
-                $rules += [$locale . '.title' => ['required','max:30', Rule::unique('facility_translations', 'title')->ignore($facilities->id, 'facility_id')]];
+                $rules += [$locale . '.title' => ['required','max:50', Rule::unique('facility_translations', 'title')->ignore($facilities->id, 'facility_id')]];
                 $rules += [$locale . '.description' => ['required']];
             }//end of for each
             $rules += ['image' => ['image','mimes:jpg,png,jpeg,gif','dimensions:min_width=500,min_height=500']];
@@ -37,7 +37,7 @@ class FacilityRequest extends FormRequest
         }//end of if    
         else{
             foreach (config('translatable.locales') as $locale) {
-                $rules += [$locale . '.title' => ['required','max:30', Rule::unique('facility_translations', 'title')]];
+                $rules += [$locale . '.title' => ['required','max:50', Rule::unique('facility_translations', 'title')]];
                 $rules += [$locale . '.description' => ['required']];
             }//end of for each
             $rules += ['image' => ['required','image','mimes:jpg,png,jpeg,gif','dimensions:min_width=1103,min_height=500']];

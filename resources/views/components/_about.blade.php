@@ -18,7 +18,7 @@
             <div class="w-100"><span class="tag">@lang("site.about_company")</span>
               @if($about->title)
               <h1 class="title">{{ Str::words($about->title , 4,'')  }}</h1>
-              <p> {{ Str::words($about->description, 40, ' ...') }}</p><a class="bottom" href="{{ route('aboutus')}}"><span>@lang("site.read_more")</span></a>
+              <p> {{ Str::words($about->description, 45, ' ...') }}</p><a class="bottom" href="{{ route('aboutus')}}"><span>@lang("site.read_more")</span></a>
               @endif
             </div>
           </div>

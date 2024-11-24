@@ -197,6 +197,12 @@
 					<span class="title">Services</span>
 					</a>
 				</li>
+				<li class="{{ Request::segment(2) === 'helps' ? 'active open' : '' }} ">
+					<a href="{{ route('helps.index')}}" >
+					<i class="fa fa-inbox"></i>
+					<span class="title">Helps</span>
+					</a>
+				</li>
 			</ul>
 			<!-- END SIDEBAR MENU -->
 		</div>

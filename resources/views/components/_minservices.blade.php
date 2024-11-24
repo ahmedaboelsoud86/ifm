@@ -9,8 +9,8 @@
             <div class="photo">
               {!! $fa->icon !!}
             </div>
-            <h3 class="title">{{ Str::words($fa->title, 4,'') }}</h3>
-            <p> {{ Str::words($fa->description, 70, ' ...') }}</p>
+            <h3 class="title">{{ Str::words($fa->title, 5,'') }}</h3>
+            <p> {{ Str::words($fa->description, 70,'') }}</p>
             <a class="more" href="{{ route('services-inner',[$fa->id,str_replace(' ','-',$fa->title)]) }}">@lang('site.read_more')</a>
           </div>
           @endforeach 
