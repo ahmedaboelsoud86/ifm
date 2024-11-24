@@ -75,20 +75,16 @@
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="{{ asset('admin_assets/admin/layout/img/avatar3_small.jpg') }}"/>
 					<span class="username username-hide-on-mobile">
-					{{-- {{ Auth::user()->name }}  --}}
+					{{ Auth::user()->name }}
 					</span>
 					<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
 						<li>
-							<a href="">
-							<i class="icon-lock"></i> Change Password </a>
-						</li>
-						<li>
-							<a  href="" onclick="event.preventDefault();
+							<a  href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
 							<i class="icon-key"></i> Log Out </a>
-							<form id="logout-form" action="" method="POST" style="display: none;">
+							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
 						</li>
