@@ -107,6 +107,10 @@ return [
     "whether_considering" => "سواء كنت تفكر في الاستعانة بمصادر خارجية لخدماتك للمرة الأولى، أو كنت تفعل ذلك منذ سنوات، فإن اتساع نطاق خدماتنا وخبراتنا وعمقها يعني أننا هنا لمساعدتك. <br>يمكننا تقديم الدعم من خلال زيادة الكفاءات وخفض التكاليف وتعزيز الاستدامة<br> وتحسين الأداء لمؤسستك.",
     "choose_a" => "اختر خدمه",
     "copy_right"=>"جميع الحقوق محفوظة © 2024. تكامل الأولى لإدارة المرافق",
+    "oops_404" => "عفوا 404 " ,
+    "back" => "للخلف",
+    "oops!" => "عفوا 404 ",
+    "opps_message" => "Lorem ipsum dolor sit amet consectetur. Nisl sit pharetra pulvinar amet elementum. Arcu eu elit tortor accumsan. Massa lacus cursus ut congue in ultrices. Justo vulputate quis quis leo tristique suspen disse lacus sit. Scelerisque molestie elementum sem id etiam placerat non viverra"
 
   
 

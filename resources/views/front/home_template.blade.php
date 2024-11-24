@@ -21,19 +21,19 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo"><a href="index.html" title="Takamul AlOula Facility Management "> <img class="logowight" src="{{ asset('assets/images/logo.png') }}" alt="Takamul AlOula Facility Management " title="Takamul AlOula Facility Management " loading="lazy"><img class="logodork" src="{{ asset('assets/images/logodork.png') }}" alt="Takamul AlOula Facility Management " title="Takamul AlOula Facility Management " loading="lazy"></a></div>
+        <div class="logo"><a href="{{ route('home')}}" title="Takamul AlOula Facility Management "> <img class="logowight" src="{{ asset('assets/images/logo.png') }}" alt="Takamul AlOula Facility Management " title="Takamul AlOula Facility Management " loading="lazy"><img class="logodork" src="{{ asset('assets/images/logodork.png') }}" alt="Takamul AlOula Facility Management " title="Takamul AlOula Facility Management " loading="lazy"></a></div>
         <div class="burger" id="burger"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></div><span class="overlay"></span>
         <nav class="navbar" id="navbar"><span class="cancel">
             <svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#fff"></path>
             </svg></span>
           <ul class="menu" id="menu">
-            <li class="menu-item activelink"><a class="menu-link" href="index.html">home</a></li>
-            <li class="menu-item"><a class="menu-link" href="aboutus.html">About Us</a></li>
-            <li class="menu-item"><a class="menu-link" href="services.html">Services & solutions </a></li>
-            <li class="menu-item"><a class="menu-link" href="clients.html">Clients </a></li>
-            <li class="menu-item"><a class="menu-link" href="news.html">News</a></li>
-            <li class="menu-item"><a class="menu-link" href="contactus.html">contact us</a></li>
+            <li class="menu-item activelink"><a class="menu-link" href="index.html">@lang('home')</a></li>
+            <li class="menu-item"><a class="menu-link" href="aboutus.html">@lang('about_us')</a></li>
+            <li class="menu-item"><a class="menu-link" href="services.html"> @lang('services_solutions')</a></li>
+            <li class="menu-item"><a class="menu-link" href="clients.html"> @lang('clients')</a></li>
+            <li class="menu-item"><a class="menu-link" href="news.html"> @lang('news')</a></li>
+            <li class="menu-item"><a class="menu-link" href="contactus.html">@lang('contact_us')</a></li>
           </ul>
         </nav>
         <div class="icon"><span class="searchicon">
@@ -79,7 +79,7 @@
     </header><!--End Header-->
     <div class="slider">
       <div class="iconssocial">
-        <p>Follow us on</p>
+        <p>@lang('Follow_us_on')</p>
         <nav class="social"><a class="icon-facebook" href="#" target="_blank" title="Facebook">
             <svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
               <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"></path>

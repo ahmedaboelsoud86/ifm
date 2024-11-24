@@ -12,19 +12,6 @@ use App\Http\Controllers\front\PrivacyController;
 use App\Http\Controllers\front\ServicesController;
 
 
-
-
-
-
-Route::get('/template', function () {
-    return view('template.layout');
-});
-
-
-// Route::get('/services-inner', function () {
-//     return view('front.pages.services-inner');
-// });
-
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -47,15 +34,7 @@ Route::group(
 
 RouteHelper::includeRouteFiles(__DIR__.'/admin');
 
-
-// Route::group(['prefix' => LaravelLocalization::setLocale()], function()
-// {
-    
-// });
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

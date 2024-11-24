@@ -126,7 +126,15 @@ return [
                 <br>We can support with increasing efficiencies, reduce costs, driving sustainability<br> and improving
                 performance for your organisation.",
     "choose_a" => "Choose a",
-    "copy_right"=>"All Rights Reserved © 2024. Takamul AlOula Facility Management",  
+    "copy_right"=>"All Rights Reserved © 2024. Takamul AlOula Facility Management", 
+    "oops_404" => "Oops 404" ,
+    "oops!" => "oops !",
+    "back" => "Back",
+    "opps_message" => "Lorem ipsum dolor sit amet consectetur. Nisl sit pharetra pulvinar amet elementum. Arcu eu elit tortor accumsan. Massa lacus cursus ut congue in ultrices. Justo vulputate quis quis leo tristique suspen disse lacus sit. Scelerisque molestie elementum sem id etiam placerat non viverra",
+    "privacy_policy_txt"=>"If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us.If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us .",
+
+
+
 
           
 
