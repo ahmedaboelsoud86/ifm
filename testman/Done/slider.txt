@@ -1,0 +1,12 @@
+front
+  sekect is ok ++++
+  number of title is goog +++ 
+  without tracslate	+++++	
+
+back 
+  vadtion 
+  add  ********
+  delete ********
+  updte **********
+  select **********
+  wuthout tracslate ************** 

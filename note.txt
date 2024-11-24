@@ -1,0 +1,34 @@
+صفحه المقال الواحد غير كامله
+الصوره ف صفحه المقال الواحد مبكسله
+
+remove the ->translate() function and test it very Good
+
+sliders no have default slider 
+
+test no data fount and limit sepacl in translate
+Facility icon
+
+بعض الحقول على قائعده البيانت 30 حرف تاكد من ان الفلدش كطابقه
+
+Completed projects numbrs
+Company partners numbrs
+Company employees numbrs
+
+Our Awards in inner service still statck
+
+
+test catorory and Facility in fornt very goood
+
+image size wint to reviews
+
+
+test json for address in empty and string data
+
+news_inner page -> Tags
+news_inner page -> Share icon
+news_inner page -> Archives
+
+
+--------------------------------------------------
+فى حالة عدم وجود بيانات ف about   صفحه المقاله الواحده بتضرب
+---------------------------------------
