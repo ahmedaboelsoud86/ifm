@@ -22,21 +22,21 @@
             <div class="tp-about-4"><img src="{{ asset('assets/images/'.$about->second_image) }}" alt="{{ $about->title }}"></div>
             <div class="tp-about-2-thumb-text">
               <div class="num">
-                <h3 class="timer" data-to="12" data-speed="1500"> </h3><span>+</span>
+                <h3 class="timer" data-to="{{ $about->number_of_years }}" data-speed="1500"> </h3><span>+</span>
               </div>
-              <p>{{ $about->number_of_years }}</p>
+              <p>@lang('site.years_of_experience')</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 item">
           <div class="w-100"><span class="tag">@lang('site.about_company')</span>
             <h1 class="title">{{ $about->title  }}</h1>
-            <p> {{ $about->description, 40 }}</p>
+            <p> {{ $about->description }}</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
   @endif
   <section class="numbers">
     <div class="container">
@@ -62,41 +62,7 @@
       </div>
     </div>
   </section><!--End provide-->
-  <section class="aboutinner">
-    <div class="container"><span class="tag text-center mb-2">@lang('site.why_choose_us')</span>
-      <h2 class="title text-center">@lang('site.integrated_facility')</h2>
-      <div class="row">
-        <div class="col-sm-3 item">
-          <div class="inner">
-            <div class="icon"><img src="{{ asset('assets/images/tw.svg') }}" alt="" title=""></div>
-            <h3 class="title">  Mission</h3>
-            <p> To transform facilities into sustainable, efficient spaces through innovative integrated management.</p>
-          </div>
-        </div>
-        <div class="col-sm-3 item">
-          <div class="inner">
-            <div class="icon"><img src="{{ asset('assets/images/vision.svg') }}" alt="" title=""></div>
-            <h3 class="title">Visions</h3>
-            <p> A future where every facility coexists harmoniously with nature.An ecosystem of seamless collaboration between technology and services.</p>
-          </div>
-        </div>
-        <div class="col-sm-3 item">
-          <div class="inner">
-            <div class="icon"><img src="{{ asset('assets/images/ingots.svg') }}" alt="" title=""></div>
-            <h3 class="title">    Advantages</h3>
-            <p> Streamlined operations that drive enhanced efficiency. Commitment to sustainability that minimizes environmental impact. Expert management ensuring superior quality and performance.</p>
-          </div>
-        </div>
-        <div class="col-sm-3 item">
-          <div class="inner">
-            <div class="icon"><img src="{{ asset('assets/images/target.svg') }}" alt="" title=""></div>
-            <h3 class="title">Values</h3>
-            <p> Integrity in all our interactions, innovation at the heart of our solutions, collaboration with clients and partners for mutual success, and excellence in service delivery and outcomes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  @include('components._minservices')
   <section class="provide">
     <div class="item">
       <div class="photo"><img src="{{ asset('assets/images/p-1.jpg') }}" alt=""></div>

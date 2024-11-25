@@ -51,7 +51,7 @@
                                         </path>
                                     </svg></a></nav>
                         </div>
-                        <h3 class="title">{{  $team->username}}</h3>
+                        <h3 class="title">{{  $team->username }}</h3>
                         <p>{{ $team->title }}</p>
                     </div>
                     </div>
