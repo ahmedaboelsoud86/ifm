@@ -13,7 +13,9 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        
+        12 , 649
+        12 649
+
     }
 
     /**
