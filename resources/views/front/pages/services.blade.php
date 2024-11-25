@@ -204,7 +204,7 @@
                         
                         @if($category_item->services)
                         @foreach ($category_item->services as $index=>$service_item)
-                        <div class="col-sm-4 item-servs"><a class="inner" href="services-inner.html">
+                        <div class="col-sm-4 item-servs"><a class="inner" href="{{ route('services-inner',[$service_item->id , str_replace(' ','-',$service_item->title)])}}">
                                 <div class="photo"><img src="{{ asset('assets/images/'.$service_item->image) }}" alt="{{ $service_item->title }}"></div>
                                 <div class="p-4">
                                     <h3 class="title"> {{ Str::words($service_item->title, 3, '')}}</h3>

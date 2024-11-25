@@ -8,6 +8,7 @@ use App\Models\Facility;
 use App\Models\Category;
 use App\Models\Power_service;
 use App\Models\Award;
+use App\Models\Service;
 use App\Models\Team;
 use App\Models\Help;
 use App\Models\Category_service;
@@ -17,18 +18,26 @@ class ServicesController extends Controller
 {
     public function index(){
         
-         $category_services = Category_service::latest()->take(4)->with('services',function($q){
+        $category_services = Category_service::whereHas('services')->latest()->take(4)->with('services',function($q){
             $q->latest()->take(3);
         })->get();
         return view('front.pages.services',compact('category_services'));
 
     }
-    public function services_inner(Facility $facility){
+    public function facility_inner(Facility $facility){
         $power_services = Power_service::take('4')->latest()->get();
         $awards = Award::take('7')->latest()->get();
         $categories = Category::whereHas('facilities')->with('facility')->take('5')->get();
         $teams = Team::take('4')->get();
-        return view('front.pages.services-inner',compact('facility','categories','power_services','awards','teams'));
+        return view('front.pages.facility-inner',compact('facility','categories','power_services','awards','teams'));
+    }
+
+    public function services_inner(Service $service){
+        $power_services = Power_service::take('4')->latest()->get();
+        $awards = Award::take('7')->latest()->get();
+        $categories = Category_service::whereHas('services')->with('service')->take('5')->get();
+        $teams = Team::take('4')->get();
+        return view('front.pages.services-inner',compact('service','categories','power_services','awards','teams'));
     }
 
     public function store(HelpRequest $request){

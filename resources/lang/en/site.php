@@ -1,6 +1,7 @@
 <?php
 
 return [
+    "no_articles_found" => "No Articles Found",
     "sent_successfully" => "Sent Successfully",
     "home"  =>  "Home",
     "aboutus"  =>  "About Us",

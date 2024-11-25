@@ -1,15 +1,15 @@
 @extends('front.pages_template')
 @section('title')
-    {{ $service->title }}
+    {{ $facility->title }}
 @endsection
 @section('content')
     <section class="map-back"><img src="{{ asset('assets/images/slider/img1.jpg') }}" alt="">
         <div class="container">
-            <h1 class="title"> {{ $service->title }}</h1>
+            <h1 class="title"> {{ $facility->title }}</h1>
             <ul class="maplink">
                 <li><a href="{{ route('home') }}">@lang('site.home')</a></li>
                 <li><a href="{{ route('services') }}">@lang('site.services_solutions')</a></li>
-                <li> {{ $service->title }}</li>
+                <li> {{ $facility->title }}</li>
             </ul>
         </div>
     </section>
@@ -17,12 +17,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 item">
-                    <div class="photo"><img src="{{ asset('assets/images/'.$service->image) }}" alt="{{ $service->title }}"></div>
+                    <div class="photo"><img src="{{ asset('assets/images/'.$facility->image) }}" alt="{{ $facility->title }}"></div>
                 </div>
                 <div class="col-sm-6 item">
                     <div><span class="tag mb-2">@lang('site.professionalism')</span>
-                        <h2 class="title">{{ $service->title }}</h2>
-                        <p>{{ $service->description }}<br><br>@lang('site.contact_our_specialist')</p><a
+                        <h2 class="title">{{ $facility->title }}</h2>
+                        <p>{{ $facility->description }}<br><br>@lang('site.contact_our_specialist')</p><a
                             class="bottom" href="{{ route('contact_us') }}"><span> @lang('site.lets_talk')</span></a>
                     </div>
                 </div>
@@ -50,13 +50,13 @@
                         <div class="row">
                             <div class="col-sm-6 iteminner">
                                 <div>
-                                    <h2 class="title">{{ $cat?->service?->title }}</h2>
-                                    <p>{{ $cat?->service?->description }} .<br><br>@lang('site.contact_our_specialist') </p><a class="bottom"
+                                    <h2 class="title">{{ $cat?->facility?->title }}</h2>
+                                    <p>{{ $cat?->facility?->description }} .<br><br>@lang('site.contact_our_specialist') </p><a class="bottom"
                                         href="#"><span> @lang('site.download_our_mini_guide')</span></a>
                                 </div>
                             </div>
                             <div class="col-sm-6 iteminner">
-                                <div class="photo"><img src="{{ asset('assets/images/'.$cat?->service?->image) }}" alt=""></div>
+                                <div class="photo"><img src="{{ asset('assets/images/'.$cat?->facility?->image) }}" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -102,5 +102,5 @@
         </div>
     </section>
     @include('components._teams')
-    @include('components._help_services')
+    @include('components._help')
 @endsection

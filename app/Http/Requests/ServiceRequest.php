@@ -29,14 +29,14 @@ class ServiceRequest extends FormRequest
         if (in_array($this->method(), ['PUT', 'PATCH'])) {
             $service = $this->route()->parameter('service');
             foreach (config('translatable.locales') as $locale) {
-                $rules += [$locale . '.title' => ['required','max:30', Rule::unique('service_translations', 'title')->ignore($service->id, 'service_id')]];
+                $rules += [$locale . '.title' => ['required','max:50', Rule::unique('service_translations', 'title')->ignore($service->id, 'service_id')]];
                 $rules += [$locale . '.description' => ['required']];
             }//end of for each
             $rules += ['image' => ['image','mimes:jpg,png,jpeg,gif','dimensions:width=1103,height=556']];
         }//end of if    
         else{
             foreach (config('translatable.locales') as $locale) {
-                $rules += [$locale . '.title' => ['required','max:30', Rule::unique('service_translations', 'title')]];
+                $rules += [$locale . '.title' => ['required','max:50', Rule::unique('service_translations', 'title')]];
                 $rules += [$locale . '.description' => ['required']];
             }//end of for each
             $rules += ['image' => ['required','image','mimes:jpg,png,jpeg,gif','dimensions:width=1103,height=556']];
@@ -48,8 +48,8 @@ class ServiceRequest extends FormRequest
     public function messages()
     {
        return [
-        'en.title.required' => __('sliders.title_en_required'),
-        'ar.title.required' => __('sliders.title_ar_required'),
+        'en.title.required' => 'Title En only ( 50 Characters )',
+        'ar.title.required' => 'Title Ar only ( 50 Characters )',
         'en.title.unique' => __('sliders.name_en_unique'),
         'ar.title.unique' => __('sliders.name_ar_unique'),
         'en.title.max' => __('sliders.title_en_max'),

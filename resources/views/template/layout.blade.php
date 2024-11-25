@@ -203,6 +203,12 @@
 					<span class="title">Helps</span>
 					</a>
 				</li>
+				<li class="{{ Request::segment(2) === 'messages' ? 'active open' : '' }} ">
+					<a href="{{ route('messages.index')}}" >
+					<i class="fa fa-inbox"></i>
+					<span class="title">Messages</span>
+					</a>
+				</li>
 			</ul>
 			<!-- END SIDEBAR MENU -->
 		</div>

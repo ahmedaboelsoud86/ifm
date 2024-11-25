@@ -25,11 +25,13 @@ Route::group(
         Route::get('/news', [NewsController::class,'index'])->name('news');
         Route::get('/privacy-policy', [PrivacyController::class,'index'])->name('privacy_policy');
         Route::get('/services', [ServicesController::class,'index'])->name('services');
-        Route::get('/services-inner/{facility}/{title?}', [ServicesController::class,'services_inner'])->name('services-inner');
+        Route::get('/facility-inner/{facility}/{title?}', [ServicesController::class,'facility_inner'])->name('facility-inner');
+        Route::get('/services-inner/{service}/{title?}', [ServicesController::class,'services_inner'])->name('services-inner');
         Route::get('/news-inner/{article}/{title?}', [NewsController::class,'news_inner'])->name('news-inner');
         Route::get('/404', [NewsController::class,'index'])->name('404');
         Route::post('/news-inner', [ServicesController::class,'store'])->name('help.store');
         Route::post('/contactus', [ContactusController::class,'contact_us'])->name('contact_us.store');
+        Route::get('/search', [NewsController::class,'search'])->name('search');
 });
 
 RouteHelper::includeRouteFiles(__DIR__.'/admin');
