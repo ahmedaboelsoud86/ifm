@@ -23,7 +23,7 @@ Edit Article
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group form-group{{ $errors->has('image') ? ' has-error' : '' }}" >
-                                        <label class="control-label">Image <span style="color: red"> * (width mist be 400 px and height 267 px )</span> </label>
+                                        <label class="control-label">Image <span style="color: red"> *  ( width and height must be more than 600 px )</span> </label>
                                         <input type="file" autocomplete="off"    name="image" class="form-control">
                                     </div>
                                 </div>

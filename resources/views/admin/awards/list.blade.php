@@ -29,7 +29,7 @@ Awards
                         @foreach($awards as $index=>$item)
                         <tr class="odd gradeX">
                             <td>  {{ $index +1 }} </td>
-                            <td>  <img class="img-thumbnail" width="200" src="{{ asset('assets/images/'.$item->photos?->image) }}" ></td>
+                            <td>  <img class="img-thumbnail" height="100" width="100" src="{{ asset('assets/images/'.$item->photos?->image) }}" ></td>
                             <td class="center">
                                 <form action="{{ route('awards.destroy',$item->id) }}" style="display:inline;" method="POST">
                                 @csrf

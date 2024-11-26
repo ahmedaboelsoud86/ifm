@@ -48,12 +48,12 @@ class ServiceRequest extends FormRequest
     public function messages()
     {
        return [
-        'en.title.required' => 'Title En only ( 50 Characters )',
-        'ar.title.required' => 'Title Ar only ( 50 Characters )',
+        'en.title.required' => 'Title En Is Required',
+        'ar.title.required' => 'Title Ar Is Required',
         'en.title.unique' => __('sliders.name_en_unique'),
         'ar.title.unique' => __('sliders.name_ar_unique'),
-        'en.title.max' => __('sliders.title_en_max'),
-        'ar.title.max' => __('sliders.title_ar_max'),
+        'en.title.max' => 'Title En only ( 50 Characters )',
+        'ar.title.max' => 'Title Ar only ( 50 Characters )',
         'en.description.required' => __('about.description_en_required'),
         'ar.description.required' => __('about.description_ar_required'),
        ];

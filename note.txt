@@ -1,6 +1,8 @@
 
-Services & Solutions
-in database help form view
+1 - Mian search in header
+2 - archive in artclie single page
+3 - tags tags
+4 - The Importance of Integrated
 
 
 

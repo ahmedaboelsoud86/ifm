@@ -27,13 +27,13 @@ textarea {
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group form-group{{ $errors->has('frist_image') ? ' has-error' : '' }}" >
-                                        <label class="control-label">Frist Image <span style="color: red"> * (width mist be 600 px and height 400 px )</span> </label>
+                                        <label class="control-label">Frist Image <span style="color: red"> * ( width and height must be more than 600 px )</span> </label>
                                         <input type="file" autocomplete="off"     name="frist_image" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group form-group{{ $errors->has('second_image') ? ' has-error' : '' }}" >
-                                        <label class="control-label">Second Image <span style="color: red"> * (width mist be 1200 px and height 800 px )</span> </label>
+                                        <label class="control-label">Second Image <span style="color: red"> * ( width and height must be more than 600 px )</span> </label>
                                         <input type="file" autocomplete="off"     name="second_image" class="form-control">
                                     </div>
                                 </div>

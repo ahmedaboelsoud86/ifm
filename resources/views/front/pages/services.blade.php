@@ -42,7 +42,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="title">Increased resource efficiency through integrated infrastructure planning</h3>
+                        <h3 class="title">@lang('importance_integrated.increased_resource')</h3>
                     </div>
                 </div>
                 <div class="col-sm-3 lnieitem">
@@ -56,7 +56,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="title">Reduced environmental impact through leveraging green and renewable solutions
+                        <h3 class="title">@lang('importance_integrated.reduced_environmental')
                         </h3>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="title">Improved quality of life through more efficient and eco-friendly facilities</h3>
+                        <h3 class="title">@lang('importance_integrated.improved_quality')</h3>
                     </div>
                 </div>
                 <div class="col-sm-3 lnieitem">
@@ -85,8 +85,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="title">Enhanced emergency and disaster response capabilities through integrated
-                            infrastructure</h3>
+                        <h3 class="title">@lang('importance_integrated.enhanced_emergency')</h3>
                     </div>
                 </div>
                 <div class="col-sm-3 lnieitem">
@@ -100,7 +99,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="title">Enabled sustainable economic and social development </h3>
+                        <h3 class="title">@lang('importance_integrated.enabled_sustainable') </h3>
                     </div>
                 </div>
             </div>

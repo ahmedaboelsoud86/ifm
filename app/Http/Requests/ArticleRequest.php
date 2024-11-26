@@ -32,14 +32,14 @@ class ArticleRequest extends FormRequest
                 $rules += [$locale . '.title' => ['required','max:100', Rule::unique('article_translations', 'title')->ignore($article->id, 'article_id')]];
                 $rules += [$locale . '.description' => ['required']];
             }//end of for each
-            $rules += ['image' => ['image','mimes:jpg,png,jpeg,gif','dimensions:width=400,height=267']];
+            $rules += ['image' => ['image','mimes:jpg,png,jpeg,gif','dimensions:min_width=600,min_height=600']];
         }//end of if    
         else{
             foreach (config('translatable.locales') as $locale) {
                 $rules += [$locale . '.title' => ['required','max:100', Rule::unique('article_translations', 'title')]];
                 $rules += [$locale . '.description' => ['required']];
             }//end of for each
-            $rules += ['image' => ['required','image','mimes:jpg,png,jpeg,gif','dimensions:width=400,height=267']];
+            $rules += ['image' => ['required','image','mimes:jpg,png,jpeg,gif','dimensions:min_width=600,min_height=600']];
         }
        
         return $rules;

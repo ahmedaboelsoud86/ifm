@@ -31,16 +31,16 @@ class AboutRequest extends FormRequest
                 $rules += [$locale . '.title' => ['required','max:100']];
                 $rules += [$locale . '.description' => ['required']];
             }//end of for each
-            $rules += ['frist_image' => ['image','mimes:jpg,png,jpeg,gif','dimensions:width=600,height=400']];
-            $rules += ['second_image' => ['image','mimes:jpg,png,jpeg,gif','dimensions:width=1200,height=800']];
+            $rules += ['frist_image' => ['image','mimes:jpg,png,jpeg,gif','dimensions:min_width=600,min_height=600']];
+            $rules += ['second_image' => ['image','mimes:jpg,png,jpeg,gif','dimensions:min_width=600,min_height=600']];
             $rules += ['number_of_years' => ['numeric','digits_between:1,3']];
         }
         foreach (config('translatable.locales') as $locale) {
             $rules += [$locale . '.title' => ['required','max:100']];
             $rules += [$locale . '.description' => ['required']];
         }//end of for each
-            $rules += ['frist_image' => ['required','image','mimes:jpg,png,jpeg,gif','dimensions:width=600,height=400']];
-            $rules += ['second_image' => ['required','image','mimes:jpg,png,jpeg,gif','dimensions:width=1200,height=800']];
+            $rules += ['frist_image' => ['required','image','mimes:jpg,png,jpeg,gif','dimensions:min_width=600,min_height=600']];
+            $rules += ['second_image' => ['required','image','mimes:jpg,png,jpeg,gif','dimensions:min_width=600,min_height=600']];
             $rules += ['number_of_years' => ['required','numeric','digits_between:1,3']];
        
         return $rules;

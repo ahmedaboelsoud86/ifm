@@ -31,7 +31,7 @@ textarea {
                                         <select class="form-control" name="category_service_id">
                                             @if($categories)
                                                 @foreach ($categories as $cat)
-                                                    <option value="{{$cat->id}}"> {{ $cat->translations[0]->title }}</option>    
+                                                    <option value="{{$cat->id}}" @selected(old('category_service_id') == $cat->id)> {{ $cat->translations[0]->title }}</option>    
                                                 @endforeach
                                             @endif
                                         </select>

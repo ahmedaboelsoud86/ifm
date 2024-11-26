@@ -12,6 +12,13 @@ use App\Http\Controllers\front\PrivacyController;
 use App\Http\Controllers\front\ServicesController;
 
 
+
+Route::get('/admin', function () {
+    return Redirect::to('admin/sliders');
+});
+
+
+
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),

@@ -2,6 +2,7 @@
 
 
 return [
+    "the_importance_integrated" => "أهمية المرافق المتكاملة والاستدامة",
     "no_articles_found" => "لا توجود مقالات ",
     "sent_successfully" => "تم الإرسال بنجاح",
     "home"  =>  "الرئيسية",
