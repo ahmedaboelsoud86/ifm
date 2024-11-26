@@ -209,6 +209,12 @@
 					<span class="title">Messages</span>
 					</a>
 				</li>
+				<li class="{{ Request::segment(2) === 'users' ? 'active open' : '' }} ">
+					<a href="{{ route('users.index')}}" >
+					<i class="fa fa-inbox"></i>
+					<span class="title">Users</span>
+					</a>
+				</li>
 			</ul>
 			<!-- END SIDEBAR MENU -->
 		</div>
