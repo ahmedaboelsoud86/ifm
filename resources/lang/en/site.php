@@ -1,6 +1,7 @@
 <?php
 
 return [
+    "search" =>"Search....",
     "no_articles_found" => "No Articles Found",
     "sent_successfully" => "Sent Successfully",
     "home"  =>  "Home",
@@ -48,7 +49,7 @@ return [
                         about your service needs, then you’ve come to the right place. <br><br> Please fill in our short
                         form and a member of our team will be in touch.<br><br>If you have a supplier enquiry, please visit
                         our dedicated portal on ",
-    "select_title" => "Select Title",    
+    "select_title" => "Select Title",
     "last_name" => "Last name",
     "fisrt_name" => "First name",
     "phone_number" => "Phone Number",
@@ -127,7 +128,7 @@ return [
                 <br>We can support with increasing efficiencies, reduce costs, driving sustainability<br> and improving
                 performance for your organisation.",
     "choose_a" => "Choose a",
-    "copy_right"=>"All Rights Reserved © 2024. Takamul AlOula Facility Management", 
+    "copy_right"=>"All Rights Reserved © 2024. Takamul AlOula Facility Management",
     "oops_404" => "Oops 404" ,
     "oops!" => "oops !",
     "back" => "Back",
@@ -137,18 +138,18 @@ return [
 
 
 
-          
 
 
 
 
-    
 
 
 
-                                        
-                                                              
-                
 
-            
+
+
+
+
+
+
 ];

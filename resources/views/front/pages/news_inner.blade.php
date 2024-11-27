@@ -5,7 +5,7 @@
 @section('content')
 
   <section class="map-back"><img src="{{ asset('assets/images/slider/img1.jpg') }}" alt="">
-      <div class="container"> 
+      <div class="container">
         <h1 class="title"> @lang('site.news')</h1>
         <ul class="maplink">
           <li><a href="{{ route('home') }}">@lang('site.home')</a></li>
@@ -18,7 +18,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-9 itemnews">
-            <div class="photo"><img src="{{ asset('assets/images/'.$article->image) }}" alt="{{ $article->title }}"></div><span class="date"> 
+            <div class="photo"><img src="{{ asset('assets/images/'.$article->image) }}" alt="{{ $article->title }}"></div><span class="date">
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.37504 14.8008H4.01176V16.3828C4.01176 16.674 4.24787 16.9101 4.5391 16.9101H18.3203C18.6116 16.9101 18.8477 16.674 18.8477 16.3828V2.67187C18.8477 2.38064 18.6116 2.14453 18.3203 2.14453H15.6836V1.61719C15.6836 1.32595 15.4475 1.08984 15.1563 1.08984C14.865 1.08984 14.6289 1.32595 14.6289 1.61719V2.14453H11.9571V1.61719C11.9571 1.32595 11.7209 1.08984 11.4297 1.08984C11.1385 1.08984 10.9024 1.32595 10.9024 1.61719V2.14453H8.26565V1.61719C8.26565 1.32595 8.02955 1.08984 7.73831 1.08984C7.44708 1.08984 7.21097 1.32595 7.21097 1.61719V2.14453H4.5391C4.24787 2.14453 4.01176 2.38064 4.01176 2.67187V5.83593C4.01176 9.72244 2.39651 12.7123 1.03744 13.8683C0.86686 14.0104 0.803614 14.2442 0.879165 14.453C0.954786 14.6617 1.153 14.8008 1.37504 14.8008ZM17.793 15.8554H5.06644V14.8008H15.1563C15.2796 14.8008 15.3991 14.7575 15.4939 14.6785C16.1278 14.1505 17.1098 12.8934 17.793 11.2833V15.8554ZM5.06644 3.19921H7.21097V3.72656C7.21097 4.01779 7.44708 4.2539 7.73831 4.2539C8.02955 4.2539 8.26565 4.01779 8.26565 3.72656V3.19921H10.9024V3.72656C10.9024 4.01779 11.1385 4.2539 11.4297 4.2539C11.7209 4.2539 11.9571 4.01779 11.9571 3.72656V3.19921H14.6289V3.72656C14.6289 4.01779 14.865 4.2539 15.1563 4.2539C15.4475 4.2539 15.6836 4.01779 15.6836 3.72656V3.19921H17.793V5.30859H5.06644V3.19921ZM5.05741 6.36292H17.7836C17.6648 9.70821 16.3809 12.3403 14.9495 13.7461H2.57454C4.1964 11.6796 4.9704 8.9888 5.05741 6.36292Z" fill="#0f9fdc"></path>
                 <clipPath id="clip0_41_4510">
@@ -37,8 +37,8 @@
                     <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
                       <path d="M 0.219 2.882 l 34.748 46.461 L 0 87.118 h 7.87 l 30.614 -33.073 l 24.735 33.073 H 90 L 53.297 38.043 L 85.844 2.882 h -7.87 L 49.781 33.341 L 27.001 2.882 H 0.219 z M 11.793 8.679 h 12.303 L 78.425 81.32 H 66.122 L 11.793 8.679 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #000; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "></path>
                     </g>
-                 
-                  
+
+
                   </svg></a><a class="icon-linkedin" href="{{ $links['linkedin'] }}" target="_blank" title="linkedin">
                   <svg viewBox="-21 -35 682.66669 682" width="682pt" xmlns="http://www.w3.org/2000/svg">
                     <path d="m77.613281-.667969c-46.929687 0-77.613281 30.816407-77.613281 71.320313 0 39.609375 29.769531 71.304687 75.8125 71.304687h.890625c47.847656 0 77.625-31.695312 77.625-71.304687-.894531-40.503906-29.777344-71.320313-76.714844-71.320313zm0 0"></path>
@@ -53,7 +53,7 @@
           <div class="col-sm-3 itemnews hidebox">
             <div class="min-search">
               <form action="{{ route('search') }}" method="GET">
-                <input class="form-control" name="q" type="text" placeholder="Search...." value="">
+                <input class="form-control" name="q" type="text" placeholder="@lang('site.search')" value="">
                 <button class="bot-search" type="submit">
                   <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.4688 14.5688L11.7875 10.8875C12.7 9.775 13.25 8.35 13.25 6.79688C13.25 3.23438 10.3594 0.34375 6.79688 0.34375C3.23125 0.34375 0.34375 3.23438 0.34375 6.79688C0.34375 10.3594 3.23125 13.25 6.79688 13.25C8.35 13.25 9.77187 12.7031 10.8844 11.7906L14.5656 15.4688C14.8156 15.7188 15.2188 15.7188 15.4688 15.4688C15.7188 15.2219 15.7188 14.8156 15.4688 14.5688ZM6.79688 11.9656C3.94375 11.9656 1.625 9.64688 1.625 6.79688C1.625 3.94688 3.94375 1.625 6.79688 1.625C9.64688 1.625 11.9688 3.94688 11.9688 6.79688C11.9688 9.64688 9.64688 11.9656 6.79688 11.9656Z"></path>
@@ -81,7 +81,7 @@
                   </svg>The Contracting Group Honored</a>
               </nav>
             </div>
-            <div class="most "> 
+            <div class="most ">
               <h2 class="title">@lang('site.most_read')</h2>
               @forelse($most_read as $item)
               <div class="other">
@@ -91,10 +91,10 @@
                 <a class="link" href="{{ route('news-inner',[$item->id,str_replace(' ','-',$item->translate()?->title)])}}" >{{ $item->title }}</a>
               </div>
               @empty
-              
+
               @endforelse
             </div>
-            <div class="tags "> 
+            <div class="tags ">
               <h2 class="title">Tags </h2>
               <nav class="list"> <a href="news-inner.html">news</a><a href="news-inner.html">escort</a><a href="news-inner.html">news</a><a href="news-inner.html">escort</a><a href="news-inner.html">news</a><a href="news-inner.html">escort</a>
               </nav>
@@ -102,5 +102,5 @@
           </div>
         </div>
       </div>
-    </section>   
+    </section>
 @endsection

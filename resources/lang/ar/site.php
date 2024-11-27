@@ -2,6 +2,7 @@
 
 
 return [
+    "search" =>"بحث...",
     "the_importance_integrated" => "أهمية المرافق المتكاملة والاستدامة",
     "no_articles_found" => "لا توجود مقالات ",
     "sent_successfully" => "تم الإرسال بنجاح",
@@ -41,7 +42,7 @@ return [
     "how_can_help" => "ابقى على تواصل",
     "more_information"=>"إذا كنت تبحث عن مزيد من المعلومات، أو تحتاج إلى التحدث مع شخص ما حول استفسار ما أو تريد الدردشة حول احتياجات الخدمة الخاصة بك، فأنت في المكان الصحيح. <br><br> يرجى ملء النموذج القصير الخاص بنا وسيتواصل معك أحد أعضاء فريقنا.<br><br>إذا كان لديك استفسار عن المورد، فيرجى زيارة بوابتنا المخصصة على  ",
 
-    "select_title" => "حدد العنوان ",    
+    "select_title" => "حدد العنوان ",
     "last_name" => "الاسم الاول ",
     "fisrt_name" => "الاسم الثانى",
     "phone_number" => "رقم التليفون ",
@@ -114,21 +115,21 @@ return [
     "oops!" => "عفوا 404 ",
     "opps_message" => "Lorem ipsum dolor sit amet consectetur. Nisl sit pharetra pulvinar amet elementum. Arcu eu elit tortor accumsan. Massa lacus cursus ut congue in ultrices. Justo vulputate quis quis leo tristique suspen disse lacus sit. Scelerisque molestie elementum sem id etiam placerat non viverra"
 
-  
-
-
-
- 
 
 
 
 
 
 
-    
-    
 
 
-                
+
+
+
+
+
+
+
+
 
 ];

@@ -3,7 +3,7 @@
 About
 @endsection
 @section('content')
-@include('partials._session')                    
+@include('partials._session')
 <div class="row">
     <div class="col-md-12  col-sm-12">
         <!-- BEGIN EXAMPLE TABLE PORTLET-->
@@ -12,12 +12,12 @@ About
                 <div class="caption">
                     <i class="fa fa-user"></i>About
                 </div>
-                <div class="actions">       
+                <div class="actions">
                     @if($about)
-                        <a href="#"  disabled class="btn btn-default btn-sm ">Add New About</a> 
+                        <a href="#"  disabled class="btn btn-default btn-sm ">Add New About</a>
                     @else
-                        <a href="{{ route('abouts.create') }}"   class="btn btn-default btn-sm ">Add New About</a> 
-                    @endif   
+                        <a href="{{ route('abouts.create') }}"   class="btn btn-default btn-sm ">Add New About</a>
+                    @endif
                 </div>
             </div>
             <div class="portlet-body">
@@ -37,8 +37,8 @@ About
                     <tbody>
                         @if($about)
                         <tr class="odd gradeX">
-                            <td>  <img class="img-thumbnail" width="200" src="{{ asset('assets/images/'.$about?->frist_image) }}" ></td>
-                            <td>  <img class="img-thumbnail" width="200" src="{{ asset('assets/images/'.$about?->second_image) }}" ></td>
+                            <td>  <img class="img-thumbnail" height="150" width="150" src="{{ asset('assets/images/'.$about?->frist_image) }}" ></td>
+                            <td>  <img class="img-thumbnail" height="150" width="150" src="{{ asset('assets/images/'.$about?->second_image) }}" ></td>
                             <td>  {{ $about?->number_of_years }} </td>
                             <td>  {{ $about->translate('en')?->title }} </td>
                             <td>  {{ $about->translate('ar')?->title }} </td>
@@ -49,7 +49,7 @@ About
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit"    title="delete" class="btn default btn-xs black show-alert-delete-box">
-                                    <i class="fa fa-trash-o"></i>  
+                                    <i class="fa fa-trash-o"></i>
                                 </button>
                                 </form>
                                 <a href="{{ route('abouts.edit',$about->id) }}" title="update" class="btn default btn-xs purple">
@@ -57,13 +57,13 @@ About
                              </td>
                         </tr>
                         @endif
-                       
+
                     </tbody>
                 </table>
             </div>
         </div>
         <!-- END EXAMPLE TABLE PORTLET-->
-    </div>      
+    </div>
 </div>
 @endsection
 @push('js')
@@ -74,7 +74,7 @@ About
 <script src="{{ asset('admin_assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js') }}" type="text/javascript"></script>
 <script src="{{ asset('admin_assets/admin/pages/scripts/table-abouts.js') }}" type="text/javascript"></script>
 <script>
-jQuery(document).ready(function() {       
+jQuery(document).ready(function() {
    Metronic.init(); // init metronic core components
    TableManaged.init();
 });
