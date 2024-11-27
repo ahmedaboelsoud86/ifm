@@ -69,8 +69,8 @@
 		<!-- BEGIN TOP NAVIGATION MENU -->
 		<div class="top-menu">
 			<ul class="nav navbar-nav pull-right">
-				
-					
+
+
 				<li class="dropdown dropdown-user">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="{{ asset('admin_assets/admin/layout/img/avatar3_small.jpg') }}"/>
@@ -90,7 +90,7 @@
 						</li>
 					</ul>
 				</li>
-				
+
 			</ul>
 		</div>
 		<!-- END TOP NAVIGATION MENU -->
@@ -215,6 +215,12 @@
 					<span class="title">Users</span>
 					</a>
 				</li>
+                <li class="{{ Request::segment(2) === 'privacies' ? 'active open' : '' }} ">
+					<a href="{{ route('privacies.index')}}" >
+					<i class="fa fa-inbox"></i>
+					<span class="title">Privacy-policy</span>
+					</a>
+				</li>
 			</ul>
 			<!-- END SIDEBAR MENU -->
 		</div>
@@ -231,12 +237,12 @@
 			<!-- END PAGE CONTENT-->
 		</div>
 	</div>
-	
+
 </div>
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
-	
+
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
 	</div>
@@ -272,7 +278,7 @@
 
 @stack('js')
 <script>
-jQuery(document).ready(function() {       
+jQuery(document).ready(function() {
    Metronic.init(); // init metronic core components
    Layout.init(); // init current layout
    QuickSidebar.init(); // init quick sidebar

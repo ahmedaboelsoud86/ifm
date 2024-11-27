@@ -14,7 +14,9 @@
     </section>
     <section class="privacy-policy">
         <div class="container">
-            <p>@lang('site.privacy_policy_txt')</p>
+            @if($privacy)
+            <p>{{ $privacy->description }}</p>
+            @endif
         </div>
     </section>
 @endsection
