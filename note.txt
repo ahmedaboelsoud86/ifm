@@ -1,8 +1,8 @@
 
 1 - Mian search in header
-2 - archive in artclie single page
-3 - tags tags
-4 - The Importance of Integrated still statcc
+2 - Archives in Article single page
+3 - Tags 
+4 - The Importance of Integrated still static
 
 
 
