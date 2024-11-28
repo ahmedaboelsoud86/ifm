@@ -78,7 +78,6 @@ return [
     "why_choose_us" => "Why Choose Us",
     "do_you_need_services" => "Do you need services or have questions?",
     "we_are_distinguished" => "We are distinguished by local leadership in project implementation strategy",
-
     "latest_news_articles" => "Latest News & Articles",
     "from_the_blog" => "From The Blog",
     "adress" => "Adress",
@@ -90,22 +89,16 @@ return [
     "message" => "Message",
     "send" => "Send",
     "your_message_sent" => "Your message was sent successfully",
-
     "yourname_required" => "Your Name Is Required",
     "yourname_max" => "Your Name must less than 100 characters",
-
     "phone_required" => "Your Phone Is Required",
     "phone_max" => "Your Phone too long",
     "phone_numeric" => "Your Phone must be number",
-
     "email_required" => "Your Email Is Required",
     "email_max" => "Your Email too long",
     "email_email" => "Your Email not correct",
-
-
     "subject_required" => "Your Subject Is Required",
     "subject_max" => "Your Subject must less than 100 characters",
-
     "message_required" => "Your Message Is Required",
     "message_max" => "Your Message Subject must less than 100 characters",
     "the_importance_integrating" => "The importance of integrating facilities and infrastructure in a sustainable manner is growing
@@ -116,7 +109,6 @@ return [
                             sustainable infrastructure and how it can be achieved in urban and regional planning",
     "the_importance_integrated" => "The Importance of Integrated <br>Facilities and Sustainability",
     "principles_of_integrated" => "Principles of Integrated Facilities and Sustainability",
-
     "integrated_planning" => "Integrated planning of infrastructure and facilities",
     "leveraging_green" => "Leveraging green and renewable solutions",
     "achieving_resource" => "Achieving resource use efficiency",
@@ -133,23 +125,4 @@ return [
     "oops!" => "oops !",
     "back" => "Back",
     "opps_message" => "Lorem ipsum dolor sit amet consectetur. Nisl sit pharetra pulvinar amet elementum. Arcu eu elit tortor accumsan. Massa lacus cursus ut congue in ultrices. Justo vulputate quis quis leo tristique suspen disse lacus sit. Scelerisque molestie elementum sem id etiam placerat non viverra",
-    "privacy_policy_txt"=>"If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us.If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us. If You Can't Find What You're Looking For In Our FAQ, Feel Free To Contact Us .",
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ];
